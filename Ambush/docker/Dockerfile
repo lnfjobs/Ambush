@@ -6,7 +6,7 @@
 #   $ cd /opt
 #   $ git clone https://github.com/lnfjobs/Ambush.git
 #   $ cd Ambush/docker
-#   $ docker build -t Ambush:latest .
+#   $ docker build -t Ambush:latest
 #   $ docker run -d -v /opt/Ambush/docker/xml:/opt/xml -p 8000:8000 Ambush:latest
 #
 # Nmap Example:
