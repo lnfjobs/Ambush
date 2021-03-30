@@ -4,7 +4,7 @@
 # -
 # Usage:
 #   $ cd /opt
-#   $ git clone https://github.com/lnfjobs/Ambush.git
+#   $ git clone https://github.com/lnfjobs/Ambush/tree/main/Ambush.git
 #   $ cd Ambush/docker
 #   $ docker build -t Ambush:latest .
 #   $ docker run -d -v /opt/Ambush/docker/xml:/opt/xml -p 8000:8000 Ambush:latest
@@ -28,7 +28,7 @@ RUN mkdir /opt/xml && mkdir /opt/notes && \
 
 RUN pip3 install Django requests xmltodict && \
     cd /opt/ && django-admin startproject nmapdashboard && cd /opt/nmapdashboard && \
-    git clone https://github.com/lnfjobs/Ambush.git nmapreport && \
+    git clone https://github.com/lnfjobs/Ambush/tree/main/Ambush.git nmapreport && \
     cd nmapreport
 
 COPY settings.py /opt/nmapdashboard/nmapdashboard/
